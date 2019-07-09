@@ -5,5 +5,14 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `วันๆ ไม่ทำอะไร`,
+    subtitle: `ของเด็กชายเอ็ม`,
+    author: `AeMzAKuN`,
+    description: `A starter blog demonstrating what Gatsby can do.`,
+    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    social: {
+      twitter: `kylemathews`,
+    },
+  },
 }
