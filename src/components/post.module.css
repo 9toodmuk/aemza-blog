@@ -1,0 +1,137 @@
+.post {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.post .img-thumbnail {
+  overflow: hidden;
+  background: #353840;
+  position: relative;
+  float: left;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.post .img-thumbnail img {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.post .post-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.post .post-title {
+  background: #fff;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  border-bottom: 3px dotted rgba(0,0,0,0.05);
+}
+
+.post .post-title h5 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.post .post-description {
+  padding: 1.25rem;
+}
+
+.post .post-footer {
+  display: flex;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 15px;
+  color: #bbb;
+  font-size: 13px;
+  text-align: center;
+}
+
+.post a {
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.post a:hover, .post a:active {
+  color: #de2b2b;
+  text-decoration: none;
+}
+
+.overlay {
+  opacity: 0;
+  background: rgba(252,79,63,0);
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #e4e4e4;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+
+
+.overlay::before, .overlay::after {
+  z-index: 3;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s,-webkit-transform 0.5s;
+  transition: opacity 0.5s,transform 0.5s;
+}
+
+.overlay:hover {
+  opacity: 1;
+  background: rgba(0,0,0,0.25);
+}
+
+.overlay:hover::before, .overlay:hover::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.info-wrapper {
+  width: 100%;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
