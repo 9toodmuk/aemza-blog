@@ -3,6 +3,7 @@ title: Hello World
 date: "2015-05-01T22:12:03.284Z"
 featuredImage: "./salty_egg.jpg"
 author: "AeMzAKuN"
+tags: "Hello World,Test"
 ---
 
 This is my first post on my new fake blog! How exciting!

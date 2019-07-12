@@ -1,3 +1,7 @@
+body {
+  background-color: #f7f7f7;
+}
+
 .wrapper {
   padding-top: 56px;
 }
@@ -12,4 +16,48 @@ a.navbar-brand, a.navbar-brand:hover, a.navbar-brand:active {
   background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB);
   background-size: cover;
   background-position: center center;
+}
+
+.post-cover {
+  height: 460px;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.blur {
+  -webkit-filter: blur(12px);
+  filter: blur(12px);
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+}
+
+a {
+  color: #de2b2b;
+}
+a:hover, a:active {
+  color: #cd2b2b;
+  text-decoration: none;
+}
+
+.dotted-line {
+  border-top: 5px dotted rgba(0,0,0,0.1);
+}
+
+.btn-facebook {
+  color: #fff;
+  background: #325a97;
+}
+.btn-facebook:hover, .btn-facebook:active {
+  color: #fff;
+  background: #233f69;
+}
+.btn-twitter {
+  color: #fff;
+  background: #00aced;
+}
+.btn-twitter:hover, .btn-twitter:active {
+  color: #fff;
+  background: #0080b0;
 }

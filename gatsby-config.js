@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `วันๆไม่ทำอะไร`,
     subtitle: `ของเด็กชายเอ็ม`,
-    author: `AeMzAKuN`,
+    author: `AeMzA-KuN`,
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
