@@ -1,10 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
-import Container from "../components/container"
+import "../styles/styles.scss"
+
+import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import Post from "../components/post"
+import Post from "../components/post/post"
 
 class BlogIndex extends React.Component {
   render() {
@@ -15,29 +16,25 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        <section className="bg-hero">
-          <div className="container bg-white py-5">
-            <h1 className="display-4">Hello, world!</h1>
-            <p className="lead">
-              This is a simple hero unit, a simple jumbotron-style component for
-              calling extra attention to featured content or information.
-            </p>
-            <hr className="my-4" />
-            <p>
-              It uses utility classes for typography and spacing to space
-              content out within the larger container.
-            </p>
+        <section className="hero bg-hero is-medium">
+          <div className="hero-body">
+            <div className="container">
+              <h1 className="title">Hello, world!</h1>
+              <h2 className="subtitle">Hero subtitle</h2>
+            </div>
           </div>
         </section>
-        <Container>
-          <div className="row">
-            {posts.map(({ node }) => (
-              <div className="col-4 py-2">
-                <Post node={node} />
-              </div>
-            ))}
+        <section class="section">
+          <div className="container">
+            <div className="columns">
+              {posts.map(({ node }) => (
+                <div className="column">
+                  <Post node={node} />
+                </div>
+              ))}
+            </div>
           </div>
-        </Container>
+        </section>
       </Layout>
     )
   }

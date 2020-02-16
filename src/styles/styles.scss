@@ -1,0 +1,95 @@
+@charset "utf-8";
+// If need, change your variables before importing Bulma
+$red: #de2b2b;
+$primary: $red;
+$link: $red;
+
+$gredient-fallback: #ff9a8b;
+$main-gredient: linear-gradient(90deg, #ff9a8b 0%, #ff6a88 55%, #ff99ac 100%);
+
+@import "~bulma/bulma.sass";
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+}
+
+.bg-hero {
+  background-color: $gredient-fallback;
+  background-image: $main-gredient;
+  text-align: center;
+
+  .title,
+  .subtitle {
+    color: white;
+  }
+}
+
+.post-title {
+  background-color: #333;
+  border-radius: 24px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  h2 {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+.song-info {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  img {
+    max-width: 250px;
+    border-radius: 24px;
+  }
+  .song-detail {
+    margin-top: 0.5rem;
+    flex: 1 0 auto;
+    .song-detail-item {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-left: 1rem;
+      div {
+        padding: 5px;
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 0.5rem;
+        &:nth-child(odd) {
+          background-image: radial-gradient(
+            circle 343px at 46.3% 47.5%,
+            rgba(242, 242, 242, 1) 0%,
+            rgba(241, 241, 241, 1) 72.9%
+          );
+          border-radius: 24px;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: bold;
+          max-width: 15%;
+          flex: 0 0 15%;
+        }
+        &:nth-child(even) {
+          color: #000;
+          text-transform: uppercase;
+          flex: 1 0 auto;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.lyrictable {
+  color: #2e2e2e;
+  text-transform: normal;
+  font-size: 13px;
+  font-family: "Tahoma";
+  line-height: 1.5em;
+  border: 0px;
+  width: 100%;
+}

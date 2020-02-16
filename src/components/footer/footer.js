@@ -13,8 +13,8 @@ const Footer = () => {
   `)
 
   return (
-    <footer className="mt-auto bg-light text-center py-4">
-      ♥ {site.siteMetadata.author}
+    <footer class="footer">
+      <div class="content has-text-centered">♥ {site.siteMetadata.author}</div>
     </footer>
   )
 }

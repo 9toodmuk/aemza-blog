@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 import styles from "./post.module.css"
 
@@ -38,10 +37,10 @@ const Post = ({ node }) => {
       </div>
       <div className={styles.postFooter}>
         <span>
-          <FontAwesomeIcon icon="user" /> {node.frontmatter.author}
+          {node.frontmatter.author}
         </span>
         <span className="ml-auto">
-          <FontAwesomeIcon icon="calendar" /> {node.frontmatter.date}
+          {node.frontmatter.date}
         </span>
         &nbsp;
       </div>
